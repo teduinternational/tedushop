@@ -2,8 +2,8 @@
 using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Repositories
-{
-    public interface IProductRepository
+{ 
+    public interface IProductRepository : IRepository<ProductRepository>
     {
     }
 
