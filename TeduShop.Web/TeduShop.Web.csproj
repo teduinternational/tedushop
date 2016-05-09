@@ -195,6 +195,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -211,6 +212,10 @@
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\plugins\angular\angular-csp.css" />
+    <Content Include="Scripts\plugins\angular\angular.js" />
+    <Content Include="Scripts\plugins\angular\angular.min.js" />
+    <Content Include="Scripts\plugins\angular\index.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -223,7 +228,6 @@
   <ItemGroup>
     <Folder Include="Assets\admin\" />
     <Folder Include="Assets\client\" />
-    <Folder Include="Scripts\plugins\" />
     <Folder Include="Scripts\spa\" />
   </ItemGroup>
   <ItemGroup>
@@ -249,6 +253,21 @@
       <Project>{7eb49ce5-4c7a-46d0-b381-eb19a5f8dfaa}</Project>
       <Name>TeduShop.Service</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".bowerrc" />
+    <Content Include="bower.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\plugins\angular\.bower.json" />
+    <Content Include="Scripts\plugins\angular\angular.min.js.gzip" />
+    <Content Include="Scripts\plugins\angular\angular.min.js.map" />
+    <Content Include="Scripts\plugins\angular\bower.json" />
+    <Content Include="Scripts\plugins\angular\package.json" />
+    <Content Include="Scripts\plugins\angular\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
