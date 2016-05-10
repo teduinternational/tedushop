@@ -13,8 +13,15 @@
   <script src="~/Scripts/spa/app.js"></script>
 </head>
 <body>
-  <div ng-controller="myController">
-    {{message}}
+  <div ng-controller="schoolController">
+    <div ng-controller="studentController">
+      In student: {{message}}
+    </div>
+    <div ng-controller="teacherController">
+      In teacher: {{message}}
+    </div>
+    From school: {{message}}
   </div>
+
 </body>
 </html>
