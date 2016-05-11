@@ -210,14 +210,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\app.routes.js" />
+    <Content Include="app\components\products\product.routes.js" />
+    <Content Include="app\components\products\productAddController.js" />
+    <Content Include="app\components\products\productAddView.html" />
+    <Content Include="app\components\products\productEditController.js" />
+    <Content Include="app\components\products\productEditView.html" />
+    <Content Include="app\components\products\productListController.js" />
+    <Content Include="app\components\products\productListView.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\plugins\angular\angular-csp.css" />
-    <Content Include="Scripts\plugins\angular\angular.js" />
-    <Content Include="Scripts\plugins\angular\angular.min.js" />
-    <Content Include="Scripts\plugins\angular\index.js" />
-    <Content Include="Scripts\spa\app.js" />
-    <Content Include="Scripts\spa\teduShopDirective.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -228,7 +231,17 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\admin\" />
+    <Folder Include="app\components\orders\" />
+    <Folder Include="app\components\product_categories\" />
+    <Folder Include="app\components\roles\" />
+    <Folder Include="app\components\users\" />
+    <Folder Include="app\shared\footer\" />
+    <Folder Include="app\shared\navigation\" />
+    <Folder Include="app\shared\services\" />
+    <Folder Include="Assets\admin\css\" />
+    <Folder Include="Assets\admin\img\" />
+    <Folder Include="Assets\admin\js\" />
+    <Folder Include="Assets\admin\libs\" />
     <Folder Include="Assets\client\" />
   </ItemGroup>
   <ItemGroup>
@@ -258,14 +271,6 @@
   <ItemGroup>
     <Content Include=".bowerrc" />
     <Content Include="bower.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\plugins\angular\.bower.json" />
-    <Content Include="Scripts\plugins\angular\angular.min.js.gzip" />
-    <Content Include="Scripts\plugins\angular\angular.min.js.map" />
-    <Content Include="Scripts\plugins\angular\bower.json" />
-    <Content Include="Scripts\plugins\angular\package.json" />
-    <Content Include="Scripts\plugins\angular\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Admin\Index.cshtml" />
