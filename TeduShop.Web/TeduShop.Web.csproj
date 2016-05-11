@@ -463,6 +463,7 @@
     <Content Include="Assets\admin\libs\slimScroll\jquery.slimscroll.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Resources\db.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -646,6 +647,9 @@
     <Content Include="Assets\admin\libs\slimScroll\.bower.json" />
     <Content Include="Assets\admin\libs\slimScroll\package.json" />
     <Content Include="Assets\admin\libs\slimScroll\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AdminLTE-2.3.0.zip" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
