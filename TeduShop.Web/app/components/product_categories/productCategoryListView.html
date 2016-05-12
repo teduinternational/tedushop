@@ -1,8 +1,8 @@
 ﻿  <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-   Danh mục sản phẩm
-    
+    Danh mục sản phẩm
+
   </h1>
   <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
@@ -26,18 +26,28 @@
         <div class="col-md-12">
           <table class="table table-bordered">
             <tr>
-              <th style="width: 10px">ID</th>
-              <th>Tên danh mục</th>
+              <th style="width: 5%">ID</th>
+              <th style="width:55%">Tên danh mục</th>
               <th style="width: 20%">Ngày tạo</th>
               <th style="width: 10%">Trạng thái</th>
+              <th style="width: 10%">Thao tác</th>
             </tr>
             <tr ng-repeat="item in productCategories">
               <td>{{item.ID}}</td>
               <td>{{item.Name}}</td>
               <td>
-                {{item.CreatedDate}}
+                {{item.CreatedDate  | date:'dd/MM/yyyy hh:mm:ss'}}
               </td>
-              <td><span class="badge bg-red">{{item.Status}}</span></td>
+              <!--class="badge bg-red"-->
+              <td>
+                <span ng-class="{'badge bg-red':item.Status==false,'badge bg-green':item.Status==true}">
+                  {{item.Status | statusFilter}}
+                </span>
+              </td>
+              <td>
+                <button class="btn btn-sm btn-primary"><i class="fa fa-pencil"></i></button>
+                <button class="btn  btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+              </td>
             </tr>
           </table>
         </div>
