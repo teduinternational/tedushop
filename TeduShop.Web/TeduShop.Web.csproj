@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -25,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -316,6 +318,8 @@
     <Content Include="Assets\admin\libs\angular\angular.js" />
     <Content Include="Assets\admin\libs\angular\angular.min.js" />
     <Content Include="Assets\admin\libs\angular\index.js" />
+    <Content Include="Assets\admin\libs\bootbox\.gitignore" />
+    <Content Include="Assets\admin\libs\bootbox\bootbox.js" />
     <Content Include="Assets\admin\libs\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="Assets\admin\libs\bootstrap\dist\css\bootstrap-theme.min.css" />
     <Content Include="Assets\admin\libs\bootstrap\dist\css\bootstrap.css" />
@@ -460,6 +464,18 @@
     <Content Include="Assets\admin\libs\jquery\src\var\support.js" />
     <Content Include="Assets\admin\libs\jquery\src\var\toString.js" />
     <Content Include="Assets\admin\libs\jquery\src\wrap.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\dist\ngBootbox.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\dist\ngBootbox.min.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-1\app.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-1\custom-dialog.tpl.html" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-1\index.html" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-2\app.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-2\index.html" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-2\main.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-2\require.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\index.html" />
+    <Content Include="Assets\admin\libs\ngBootbox\gulpfile.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\ngBootbox.js" />
     <Content Include="Assets\admin\libs\slimScroll\examples\allow-page-scroll.html" />
     <Content Include="Assets\admin\libs\slimScroll\examples\chaining.html" />
     <Content Include="Assets\admin\libs\slimScroll\examples\disable-fade-out.html" />
@@ -680,11 +696,36 @@
     <Content Include="Assets\admin\libs\toastr\toastr.less" />
     <Content Include="Assets\admin\libs\toastr\toastr.scss" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\admin\libs\bootbox\.bower.json" />
+    <Content Include="Assets\admin\libs\bootbox\.jshintrc" />
+    <Content Include="Assets\admin\libs\bootbox\.npmignore" />
+    <Content Include="Assets\admin\libs\bootbox\.travis.yml" />
+    <Content Include="Assets\admin\libs\bootbox\bower.json" />
+    <Content Include="Assets\admin\libs\bootbox\CONTRIBUTING.md" />
+    <Content Include="Assets\admin\libs\bootbox\LICENSE.md" />
+    <Content Include="Assets\admin\libs\bootbox\package.json" />
+    <Content Include="Assets\admin\libs\bootbox\README.md" />
+    <Content Include="Assets\admin\libs\ngBootbox\.bower.json" />
+    <Content Include="Assets\admin\libs\ngBootbox\bower.json" />
+    <Content Include="Assets\admin\libs\ngBootbox\package.json" />
+    <Content Include="Assets\admin\libs\ngBootbox\README.md" />
+    <Content Include="Assets\admin\libs\ngBootbox\tsd.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Assets\admin\libs\ngBootbox\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="Assets\admin\libs\ngBootbox\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Assets\admin\libs\ngBootbox\typings\tsd.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
