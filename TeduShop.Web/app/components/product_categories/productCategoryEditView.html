@@ -1,14 +1,14 @@
 ﻿  <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-    Thêm mới danh mục
+    Cập nhật danh mục: {{productCategory.Name}}
 
   </h1>
   <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
     <li><a href="#">Sản phẩm</a></li>
     <li><a ui-sref="product_categories">Danh mục</a></li>
-    <li class="active">Thêm mới</li>
+    <li class="active">Cập nhật</li>
   </ol>
 </section>
 <!-- Main content -->
@@ -16,18 +16,17 @@
   <!-- Horizontal Form -->
   <div class="box box-info">
     <div class="box-header with-border">
-      <h3 class="box-title">Thêm mới</h3>
+      <h3 class="box-title">{{productCategory.Name}}</h3>
     </div><!-- /.box-header -->
     <!-- form start -->
-    <form class="form-horizontal" novalidate name="frmAddProductCategory" role="form" ng-submit="AddProductCategory()">
+    <form class="form-horizontal" novalidate name="frmUpdateProductCategory" role="form" ng-submit="UpdateProductCategory()">
       <div class="box-body">
         <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label">Tên danh mục</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" ng-maxlength="256" required name="name" ng-model="productCategory.Name">
+            <input type="text" class="form-control" ng-change="GetSeoTitle()" required name="name" ng-model="productCategory.Name">
             <span ng-show="frmAddProductCategory.name.$invalid" class="has-error">Phải nhập tên danh mục</span>
             <span ng-show="frmAddProductCategory.name.$error.maxlength" class="has-error">Tên danh mục chỉ được 256 ký tự</span>
-
           </div>
         </div>
         <div class="form-group">
@@ -36,23 +35,22 @@
             <input type="text" class="form-control" name="alias" required ng-model="productCategory.Alias">
             <span ng-show="frmAddProductCategory.alias.$invalid" class="has-error">Phải nhập tiêu đề SEO</span>
             <span ng-show="frmAddProductCategory.alias.$error.maxlength" class="has-error">Tiêu đề SEO chỉ được 256 ký tự</span>
-
-
           </div>
         </div>
         <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label">Mô tả ngắn</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" name="description" ng-maxlength="500" ng-model="productCategory.Description">
+            <input type="text" class="form-control" ng-maxlength="500" name="description" ng-model="productCategory.Description">
             <span ng-show="frmAddProductCategory.description.$error.maxlength" class="has-error">Mô tả chỉ được 500 ký tự</span>
+
           </div>
         </div>
         <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label">Danh mục cha</label>
           <div class="col-sm-10">
-           <select name="parentId" class="form-control" ng-model="productCategory.ParentID" ng-options="option.ID as option.Name for option in parentCategories">
-             <option value="">Danh mục gốc</option>
-           </select>
+            <select name="parentId" class="form-control" ng-model="productCategory.ParentID" ng-options="option.ID as option.Name for option in parentCategories">
+              <option value="">Danh mục gốc</option>
+            </select>
             <input type="hidden" name="parentId" ng-model="productCategory.ParentID" />
           </div>
         </div>
@@ -61,12 +59,13 @@
           <div class="col-sm-10">
             <input type="number" class="form-control" name="displayOrder" required ng-model="productCategory.DisplayOrder">
             <span ng-show="frmAddProductCategory.displayOrder.$invalid" class="has-error">Phải nhập thứ tự</span>
+
           </div>
         </div>
         <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label">Hình ảnh</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" name="image" ng-model="productCategory.Image">
+            <input type="text" class="form-control" name="image" ng-maxlength="256" ng-model="productCategory.Image">
             <span ng-show="frmAddProductCategory.image.$error.maxlength" class="has-error">Hình ảnh chỉ được 256 ký tự</span>
 
           </div>
@@ -100,7 +99,7 @@
       </div><!-- /.box-body -->
       <div class="box-footer">
         <button ui-sref="product_categories" class="btn btn-default">Hủy</button>
-        <button type="submit" ng-disabled="frmAddProductCategory.$invalid" class="btn btn-success pull-right">Lưu</button>
+        <button type="submit" class="btn btn-success pull-right" ng-disabled="frmUpdateProductCategory.$invalid">Lưu</button>
       </div><!-- /.box-footer -->
     </form>
   </div><!-- /.box -->
