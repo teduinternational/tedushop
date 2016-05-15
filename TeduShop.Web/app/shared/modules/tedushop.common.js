@@ -1,3 +1,3 @@
 ﻿(function () {
-    angular.module('tedushop.common', ['ui.router', 'ngBootbox'])
+    angular.module('tedushop.common', ['ui.router', 'ngBootbox','ngCkeditor'])
 })();
