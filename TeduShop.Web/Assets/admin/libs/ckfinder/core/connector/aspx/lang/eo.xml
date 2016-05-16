@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object for the Esperanto language.
+-->
+<messages>
+	<errorUnknown>Ne eblis plenumi la peton. (Eraro %1)</errorUnknown>
+	<errors>
+		<error number="10">Nevalida komando.</error>
+		<error number="11">La risurctipo ne estas indikita en la komando.</error>
+		<error number="12">La risurctipo ne estas valida.</error>
+		<error number="102">La dosier- aŭ dosierujnomo ne estas valida.</error>
+		<error number="103">Ne eblis plenumi la peton pro rajtaj limigoj.</error>
+		<error number="104">Ne eblis plenumi la peton pro atingopermesaj limigoj.</error>
+		<error number="105">Nevalida dosiernoma finaĵo.</error>
+		<error number="109">Nevalida peto.</error>
+		<error number="110">Nekonata eraro.</error>
+		<error number="111">It was not possible to complete the request due to resulting file size.</error>
+		<error number="115">Dosiero aŭ dosierujo kun tiu nomo jam ekzistas.</error>
+		<error number="116">Tiu dosierujo ne ekzistas. Bonvolu aktualigi kaj reprovi.</error>
+		<error number="117">Tiu dosiero ne ekzistas. Bonvolu aktualigi kaj reprovi.</error>
+		<error number="118">La vojoj al la fonto kaj al la celo estas samaj.</error>
+		<error number="201">Dosiero kun la sama nomo jam ekzistas. La alŝutita dosiero estas renomita al "%1".</error>
+		<error number="202">Nevalida dosiero.</error>
+		<error number="203">Nevalida dosiero. La grando estas tro alta.</error>
+		<error number="204">La alŝutita dosiero estas difektita.</error>
+		<error number="205">Neniu provizora dosierujo estas disponebla por alŝuto al la servilo.</error>
+		<error number="206">Alŝuto nuligita pro kialoj pri sekureco. La dosiero entenas datenojn de HTMLtipo.</error>
+		<error number="207">La alŝutita dosiero estas renomita al "%1".</error>
+		<error number="300">La movo de la dosieroj malsukcesis.</error>
+		<error number="301">La kopio de la dosieroj malsukcesis.</error>
+		<error number="500">La dosieradministra sistemo estas malvalidigita. Kontaktu vian administranton kaj kontrolu la agordodosieron de CKFinder.</error>
+		<error number="501">La eblo de miniaturoj estas malvalidigita.</error>
+	</errors>
+</messages>

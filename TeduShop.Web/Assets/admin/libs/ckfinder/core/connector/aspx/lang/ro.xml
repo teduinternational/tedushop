@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object for the Romanian language.
+-->
+<messages>
+	<errorUnknown>Nu a fost posibilă finalizarea cererii. (Eroare %1)</errorUnknown>
+	<errors>
+		<error number="10">Comandă invalidă.</error>
+		<error number="11">Tipul de resursă nu a fost specificat în cerere.</error>
+		<error number="12">Tipul de resursă cerut nu este valid.</error>
+		<error number="102">Nume fișier sau nume dosar invalid.</error>
+		<error number="103">Nu a fost posibiliă finalizarea cererii din cauza restricțiilor de autorizare.</error>
+		<error number="104">Nu a fost posibiliă finalizarea cererii din cauza restricțiilor de permisiune la sistemul de fișiere.</error>
+		<error number="105">Extensie fișier invalidă.</error>
+		<error number="109">Cerere invalidă.</error>
+		<error number="110">Eroare necunoscută.</error>
+		<error number="111">It was not possible to complete the request due to resulting file size.</error>
+		<error number="115">Există deja un fișier sau un dosar cu același nume.</error>
+		<error number="116">Dosar negăsit. Te rog împrospătează și încearcă din nou.</error>
+		<error number="117">Fișier negăsit. Te rog împrospătează lista de fișiere și încearcă din nou.</error>
+		<error number="118">Calea sursei și a țintei sunt egale.</error>
+		<error number="201">Un fișier cu același nume este deja disponibil. Fișierul încărcat a fost redenumit cu "%1".</error>
+		<error number="202">Fișier invalid.</error>
+		<error number="203">Fișier invalid. Mărimea fișierului este prea mare.</error>
+		<error number="204">Fișierul încărcat este corupt.</error>
+		<error number="205">Niciun dosar temporar nu este disponibil pentru încărcarea pe server.</error>
+		<error number="206">Încărcare anulată din motive de securitate. Fișierul conține date asemănătoare cu HTML.</error>
+		<error number="207">Fișierul încărcat a fost redenumit cu "%1".</error>
+		<error number="300">Mutare fișier(e) eșuată.</error>
+		<error number="301">Copiere fișier(e) eșuată.</error>
+		<error number="500">Browser-ul de fișiere este dezactivat din motive de securitate. Te rog contactează administratorul de sistem și verifică configurarea de fișiere CKFinder.</error>
+		<error number="501">Funcționalitatea de creat thumbnails este dezactivată.</error>
+	</errors>
+</messages>

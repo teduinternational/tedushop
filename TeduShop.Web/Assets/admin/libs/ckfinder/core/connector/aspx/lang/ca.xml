@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object for the Catalan language.
+-->
+<messages>
+	<errorUnknown>No ha estat possible completar la solicitut. (Error %1)</errorUnknown>
+	<errors>
+		<error number="10">Ordre incorrecte.</error>
+		<error number="11">El tipus de recurs no ha estat especificat a la solicitut.</error>
+		<error number="12">El tipus de recurs solicitat no és vàlid.</error>
+		<error number="102">Nom de fitxer o carpeta no vàlids.</error>
+		<error number="103">No s'ha pogut completar la solicitut degut a les restriccions d'autorització.</error>
+		<error number="104">No s'ha pogut completar la solicitut degut a les restriccions en el sistema de fitxers.</error>
+		<error number="105">La extensió del fitxer no es vàlida.</error>
+		<error number="109">Petició invàlida.</error>
+		<error number="110">Error desconegut.</error>
+		<error number="111">No ha estat possible completar l'operació a causa de la grandària del fitxer resultant.</error>
+		<error number="115">Ja existeix un fitxer o carpeta amb aquest nom.</error>
+		<error number="116">No s'ha trobat la carpeta. Si us plau, actualitzi i torni-ho a provar.</error>
+		<error number="117">No s'ha trobat el fitxer. Si us plau, actualitzi i torni-ho a provar.</error>
+		<error number="118">Les rutes origen i destí són iguals.</error>
+		<error number="201">Ja existeix un fitxer amb aquest nom. El fitxer pujat ha estat renombrat com a "%1".</error>
+		<error number="202">Fitxer invàlid.</error>
+		<error number="203">Fitxer invàlid. El pes és massa gran.</error>
+		<error number="204">El fitxer pujat està corrupte.</error>
+		<error number="205">La carpeta temporal no està disponible en el servidor per poder realitzar pujades.</error>
+		<error number="206">La pujada s'ha cancel·lat per raons de seguretat. El fitxer conté codi HTML.</error>
+		<error number="207">El fitxer pujat ha estat renombrat com a "%1".</error>
+		<error number="300">Ha fallat el moure el(s) fitxer(s).</error>
+		<error number="301">Ha fallat el copiar el(s) fitxer(s).</error>
+		<error number="500">El navegador de fitxers està deshabilitat per raons de seguretat. Si us plau, contacti amb l'administrador del sistema i comprovi el fitxer de configuració de CKFinder.</error>
+		<error number="501">El suport per a icones està deshabilitat.</error>
+	</errors>
+</messages>

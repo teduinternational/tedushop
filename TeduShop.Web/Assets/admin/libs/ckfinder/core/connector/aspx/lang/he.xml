@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object for the Hebrew language.
+-->
+<messages>
+	<errorUnknown>לא היה ניתן להשלים את הבקשה. (שגיאה %1)</errorUnknown>
+	<errors>
+		<error number="10">הוראה לא תקינה.</error>
+		<error number="11">סוג המשאב לא צויין בבקשה לשרת.</error>
+		<error number="12">סוג המשאב המצויין לא תקין.</error>
+		<error number="102">שם הקובץ או התיקיה לא תקין.</error>
+		<error number="103">לא היה ניתן להשלים את הבקשה בשל הרשאות מוגבלות.</error>
+		<error number="104">לא היה ניתן להשלים את הבקשה בשל הרשאות מערכת קבצים מוגבלות.</error>
+		<error number="105">סיומת הקובץ לא תקינה.</error>
+		<error number="109">בקשה לא תקינה.</error>
+		<error number="110">שגיאה לא ידועה.</error>
+		<error number="111">לא ניתן היה להשלים את הבקשה בשל הגודל החריג של הקובץ הנוצר.</error>
+		<error number="115">כבר קיים/ת קובץ או תיקיה באותו השם.</error>
+		<error number="116">התיקיה לא נמצאה. נא לרענן ולנסות שוב.</error>
+		<error number="117">הקובץ לא נמצא. נא לרענן ולנסות שוב.</error>
+		<error number="118">כתובות המקור והיעד זהות.</error>
+		<error number="201">קובץ עם אותו השם כבר קיים. שם הקובץ שהועלה שונה ל "%1"</error>
+		<error number="202">הקובץ לא תקין.</error>
+		<error number="203">הקובץ לא תקין. גודל הקובץ גדול מדי.</error>
+		<error number="204">הקובץ המועלה לא תקין</error>
+		<error number="205">לא קיימת בשרת תיקיה זמנית להעלאת קבצים.</error>
+		<error number="206">ההעלאה בוטלה מסיבות אבטחה. הקובץ מכיל תוכן שדומה ל-HTML.</error>
+		<error number="207">שם הקובץ שהועלה שונה ל "%1"</error>
+		<error number="300">העברת הקבצים נכשלה.</error>
+		<error number="301">העתקת הקבצים נכשלה.</error>
+		<error number="500">דפדפן הקבצים מנוטרל מסיבות אבטחה. יש לפנות למנהל המערכת ולבדוק את קובץ התצורה של CKFinder.</error>
+		<error number="501">התמיכה בתמונות מוקטנות מבוטלת.</error>
+	</errors>
+</messages>

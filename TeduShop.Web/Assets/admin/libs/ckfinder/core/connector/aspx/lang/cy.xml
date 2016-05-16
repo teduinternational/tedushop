@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object for the Welsh language.
+-->
+<messages>
+	<errorUnknown>Does dim modd cwblhau'r cais. (Gwall %1)</errorUnknown>
+	<errors>
+		<error number="10">Gorchymyn annilys.</error>
+		<error number="11">Doedd math yr adnodd heb ei benodi yn y cais.</error>
+		<error number="12">Dyw math yr adnodd ddim yn ddilys.</error>
+		<error number="102">Enw ffeil neu ffolder annilys.</error>
+		<error number="103">Doedd dim modd cwblhau'r cais oherwydd cyfyngiadau awdurdodi.</error>
+		<error number="104">Doedd dim modd cwblhau'r cais oherwydd cyfyngiadau i hawliau'r system ffeilio.</error>
+		<error number="105">Estyniad ffeil annilys.</error>
+		<error number="109">Cais annilys.</error>
+		<error number="110">Gwall anhysbys.</error>
+		<error number="111">It was not possible to complete the request due to resulting file size.</error>
+		<error number="115">Mae ffeil neu ffolder gyda'r un enw yn bodoli yn barod.</error>
+		<error number="116">Methu â darganfod y ffolder. Adfywiwch a cheisio eto.</error>
+		<error number="117">Methu â darganfod y ffeil. Adfywiwch y rhestr ffeiliau a cheisio eto.</error>
+		<error number="118">Mae'r llwybrau gwreiddiol a tharged yn unfath.</error>
+		<error number="201">Mae ffeil â'r enw hwnnw yn bodoli yn barod. Cafodd y ffeil a lanlwythwyd ei hailenwi i "%1".</error>
+		<error number="202">Ffeil annilys.</error>
+		<error number="203">Ffeil annilys. Mae maint y ffeil yn rhy fawr.</error>
+		<error number="204">Mae'r ffeil a lanwythwyd wedi chwalu.</error>
+		<error number="205">Does dim ffolder dros dro ar gael er mwyn lanlwytho ffeiliau iddo ar y gweinydd hwn.</error>
+		<error number="206">Cafodd y lanlwythiad ei ddiddymu oherwydd rhesymau diogelwch. Mae'r ffeil yn cynnwys data yn debyg i HTML.</error>
+		<error number="207">Cafodd y ffeil a lanlwythwyd ei hailenwi i "%1".</error>
+		<error number="300">Methodd symud y ffeil(iau).</error>
+		<error number="301">Methodd copïo'r ffeil(iau).</error>
+		<error number="500">Cafodd y porwr ffeiliau ei anallogi oherwydd rhesymau diogelwch. Cysylltwch â'ch gweinyddwr system a gwirio'ch ffeil ffurfwedd CKFinder.</error>
+		<error number="501">Mae cynhaliaeth bawdluniau wedi'i hanalluogi.</error>
+	</errors>
+</messages>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object for the Vietnamese language.
+-->
+<messages>
+	<errorUnknown>Không thể hoàn tất yêu cầu. (Lỗi %1)</errorUnknown>
+	<errors>
+		<error number="10">Lệnh không hợp lệ.</error>
+		<error number="11">Kiểu tài nguyên không được chỉ định trong yêu cầu.</error>
+		<error number="12">Kiểu tài nguyên yêu cầu không hợp lệ.</error>
+		<error number="102">Tên tập tin hay thư mục không hợp lệ.</error>
+		<error number="103">Không thể hoàn tất yêu cầu vì giới hạn quyền.</error>
+		<error number="104">Không thể hoàn tất yêu cầu vì giới hạn quyền của hệ thống tập tin.</error>
+		<error number="105">Phần mở rộng tập tin không hợp lệ.</error>
+		<error number="109">Yêu cầu không hợp lệ.</error>
+		<error number="110">Lỗi không xác định.</error>
+		<error number="111">It was not possible to complete the request due to resulting file size.</error>
+		<error number="115">Tập tin hoặc thư mục cùng tên đã tồn tại.</error>
+		<error number="116">Không thấy thư mục. Hãy làm tươi và thử lại.</error>
+		<error number="117">Không thấy tập tin. Hãy làm tươi và thử lại.</error>
+		<error number="118">Đường dẫn nguồn và đích giống nhau.</error>
+		<error number="201">Tập tin cùng tên đã tồn tại. Tập tin vừa tải lên được đổi tên thành "%1".</error>
+		<error number="202">Tập tin không hợp lệ.</error>
+		<error number="203">Tập tin không hợp lệ. Dung lượng quá lớn.</error>
+		<error number="204">Tập tin tải lên bị hỏng.</error>
+		<error number="205">Không có thư mục tạm để tải tập tin.</error>
+		<error number="206">Huỷ tải lên vì lí do bảo mật. Tập tin chứa dữ liệu giống HTML.</error>
+		<error number="207">Tập tin được đổi tên thành "%1".</error>
+		<error number="300">Di chuyển tập tin thất bại.</error>
+		<error number="301">Chép tập tin thất bại.</error>
+		<error number="500">Trình duyệt tập tin bị vô hiệu vì lí do bảo mật. Xin liên hệ quản trị hệ thống và kiểm tra tập tin cấu hình CKFinder.</error>
+		<error number="501">Chức năng hỗ trợ ảnh mẫu bị vô hiệu.</error>
+	</errors>
+</messages>

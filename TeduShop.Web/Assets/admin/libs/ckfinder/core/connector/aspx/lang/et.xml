@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object for the Estonian language.
+-->
+<messages>
+	<errorUnknown>Päringu täitmine ei olnud võimalik. (Viga %1)</errorUnknown>
+	<errors>
+		<error number="10">Vigane käsk.</error>
+		<error number="11">Allika liik ei olnud päringus määratud.</error>
+		<error number="12">Päritud liik ei ole sobiv.</error>
+		<error number="102">Sobimatu faili või kausta nimi.</error>
+		<error number="103">Piiratud õiguste tõttu ei olnud võimalik päringut lõpetada.</error>
+		<error number="104">Failisüsteemi piiratud õiguste tõttu ei olnud võimalik päringut lõpetada.</error>
+		<error number="105">Sobimatu faililaiend.</error>
+		<error number="109">Vigane päring.</error>
+		<error number="110">Tundmatu viga.</error>
+		<error number="111">It was not possible to complete the request due to resulting file size.</error>
+		<error number="115">Sellenimeline fail või kaust on juba olemas.</error>
+		<error number="116">Kausta ei leitud. Palun värskenda lehte ja proovi uuesti.</error>
+		<error number="117">Faili ei leitud. Palun värskenda lehte ja proovi uuesti.</error>
+		<error number="118">Lähte- ja sihtasukoht on sama.</error>
+		<error number="201">Samanimeline fail on juba olemas. Üles laaditud faili nimeks pandi "%1".</error>
+		<error number="202">Vigane fail.</error>
+		<error number="203">Vigane fail. Fail on liiga suur.</error>
+		<error number="204">Üleslaaditud fail on rikutud.</error>
+		<error number="205">Serverisse üleslaadimiseks pole ühtegi ajutiste failide kataloogi.</error>
+		<error number="206">Üleslaadimine katkestati turvakaalutlustel. Fail sisaldab HTMLi sarnaseid andmeid.</error>
+		<error number="207">Üleslaaditud faili nimeks pandi "%1".</error>
+		<error number="300">Faili(de) liigutamine nurjus.</error>
+		<error number="301">Faili(de) kopeerimine nurjus.</error>
+		<error number="500">Failide sirvija on turvakaalutlustel keelatud. Palun võta ühendust oma süsteemi administraatoriga ja kontrolli CKFinderi seadistusfaili.</error>
+		<error number="501">Pisipiltide tugi on keelatud.</error>
+	</errors>
+</messages>

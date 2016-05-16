@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object for the Croatian language.
+-->
+<messages>
+	<errorUnknown>Nije moguće završiti zahtjev. (Greška %1)</errorUnknown>
+	<errors>
+		<error number="10">Nepoznata naredba.</error>
+		<error number="11">Nije navedena vrsta u zahtjevu.</error>
+		<error number="12">Zatražena vrsta nije važeća.</error>
+		<error number="102">Neispravno naziv datoteke ili direktoija.</error>
+		<error number="103">Nije moguće izvršiti zahtjev zbog ograničenja pristupa.</error>
+		<error number="104">Nije moguće izvršiti zahtjev zbog ograničenja postavka sustava.</error>
+		<error number="105">Nedozvoljena vrsta datoteke.</error>
+		<error number="109">Nedozvoljen zahtjev.</error>
+		<error number="110">Nepoznata greška.</error>
+		<error number="111">It was not possible to complete the request due to resulting file size.</error>
+		<error number="115">Datoteka ili direktorij s istim nazivom već postoji.</error>
+		<error number="116">Direktorij nije pronađen. Osvježite stranicu i pokušajte ponovo.</error>
+		<error number="117">Datoteka nije pronađena. Osvježite listu datoteka i pokušajte ponovo.</error>
+		<error number="118">Putanje izvora i odredišta su jednake.</error>
+		<error number="201">Datoteka s istim nazivom već postoji. Poslana datoteka je promjenjena u "%1".</error>
+		<error number="202">Neispravna datoteka.</error>
+		<error number="203">Neispravna datoteka. Veličina datoteke je prevelika.</error>
+		<error number="204">Poslana datoteka je neispravna.</error>
+		<error number="205">Ne postoji privremeni direktorij za slanje na server.</error>
+		<error number="206">Slanje je poništeno zbog sigurnosnih postavki. Naziv datoteke sadrži HTML podatke.</error>
+		<error number="207">Poslana datoteka je promjenjena u "%1".</error>
+		<error number="300">Premještanje datoteke(a) nije uspjelo.</error>
+		<error number="301">Kopiranje datoteke(a) nije uspjelo.</error>
+		<error number="500">Pretraživanje datoteka nije dozvoljeno iz sigurnosnih razloga. Molimo kontaktirajte administratora sustava kako bi provjerili postavke CKFinder konfiguracijske datoteke.</error>
+		<error number="501">The thumbnails support is disabled.</error>
+	</errors>
+</messages>

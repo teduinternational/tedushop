@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object for the Lithuanian language.
+-->
+<messages>
+	<errorUnknown>Užklausos įvykdyti nepavyko. (Klaida %1)</errorUnknown>
+	<errors>
+		<error number="10">Neteisinga komanda.</error>
+		<error number="11">Resurso rūšis nenurodyta užklausoje.</error>
+		<error number="12">Neteisinga resurso rūšis.</error>
+		<error number="102">Netinkamas failas arba segtuvo pavadinimas.</error>
+		<error number="103">Nepavyko įvykdyti užklausos dėl autorizavimo apribojimų.</error>
+		<error number="104">Nepavyko įvykdyti užklausos dėl failų sistemos leidimų apribojimų.</error>
+		<error number="105">Netinkamas failo plėtinys.</error>
+		<error number="109">Netinkama užklausa.</error>
+		<error number="110">Nežinoma klaida.</error>
+		<error number="111">It was not possible to complete the request due to resulting file size.</error>
+		<error number="115">Failas arba segtuvas su tuo pačiu pavadinimu jau yra.</error>
+		<error number="116">Segtuvas nerastas. Pabandykite atnaujinti.</error>
+		<error number="117">Failas nerastas. Pabandykite atnaujinti failų sąrašą.</error>
+		<error number="118">Šaltinio ir nurodomos vietos nuorodos yra vienodos.</error>
+		<error number="201">Failas su tuo pačiu pavadinimu jau tra. Įkeltas failas buvo pervadintas į "%1"</error>
+		<error number="202">Netinkamas failas</error>
+		<error number="203">Netinkamas failas. Failo apimtis yra per didelė.</error>
+		<error number="204">Įkeltas failas yra pažeistas.</error>
+		<error number="205">Nėra laikinojo segtuvo skirto failams įkelti.</error>
+		<error number="206">Įkėlimas bus nutrauktas dėl saugumo sumetimų. Šiame faile yra HTML duomenys.</error>
+		<error number="207">Įkeltas failas buvo pervadintas į "%1"</error>
+		<error number="300">Failų perkėlimas nepavyko.</error>
+		<error number="301">Failų kopijavimas nepavyko.</error>
+		<error number="500">Failų naršyklė yra išjungta dėl saugumo nustaymų. Prašau susisiekti su sistemų administratoriumi ir patikrinkite CKFinder konfigūracinį failą.</error>
+		<error number="501">Miniatiūrų palaikymas išjungtas.</error>
+	</errors>
+</messages>

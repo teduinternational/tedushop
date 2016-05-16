@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object, for the Turkish language. Turkish translation by Abdullah M CEYLAN a.k.a. Kenan Balamir. Updated. Günce BEKTAŞ update tr.js file and translate help folder.
+-->
+<messages>
+	<errorUnknown>İsteğinizi yerine getirmek mümkün değil. (Hata %1)</errorUnknown>
+	<errors>
+		<error number="10">Geçersiz komut.</error>
+		<error number="11">İstekte kaynak türü belirtilmemiş.</error>
+		<error number="12">Talep edilen kaynak türü geçersiz.</error>
+		<error number="102">Geçersiz dosya ya da klasör adı.</error>
+		<error number="103">Kimlik doğrulama kısıtlamaları nedeni ile talebinizi yerine getiremiyoruz.</error>
+		<error number="104">Dosya sistemi kısıtlamaları nedeni ile talebinizi yerine getiremiyoruz.</error>
+		<error number="105">Geçersiz dosya uzantısı.</error>
+		<error number="109">Geçersiz istek.</error>
+		<error number="110">Bilinmeyen hata.</error>
+		<error number="111">Dosya boyutundan dolayı bu işlemin yapılması mümkün değil.</error>
+		<error number="115">Aynı isimde bir dosya ya da klasör zaten var.</error>
+		<error number="116">Klasör bulunamadı. Lütfen yenileyin ve tekrar deneyin.</error>
+		<error number="117">Dosya bulunamadı. Lütfen dosya listesini yenileyin ve tekrar deneyin.</error>
+		<error number="118">Kaynak ve hedef yol aynı!</error>
+		<error number="201">Aynı ada sahip bir dosya zaten var. Yüklenen dosyanın adı "%1" olarak değiştirildi.</error>
+		<error number="202">Geçersiz dosya</error>
+		<error number="203">Geçersiz dosya. Dosya boyutu çok büyük.</error>
+		<error number="204">Yüklenen dosya bozuk.</error>
+		<error number="205">Dosyaları yüklemek için gerekli geçici klasör sunucuda bulunamadı.</error>
+		<error number="206">Güvenlik nedeni ile yükleme iptal edildi. Dosya HTML benzeri veri içeriyor.</error>
+		<error number="207">Yüklenen dosyanın adı "%1" olarak değiştirildi.</error>
+		<error number="300">Dosya taşıma işlemi başarısız.</error>
+		<error number="301">Dosya kopyalama işlemi başarısız.</error>
+		<error number="500">Güvenlik nedeni ile dosya gezgini devredışı bırakıldı. Lütfen sistem yöneticiniz ile irtibata geçin ve CKFinder yapılandırma dosyasını kontrol edin.</error>
+		<error number="501">Önizleme desteği devredışı.</error>
+	</errors>
+</messages>

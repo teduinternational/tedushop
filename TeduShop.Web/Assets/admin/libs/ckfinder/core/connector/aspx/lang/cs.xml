@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object for the Czech language.
+-->
+<messages>
+	<errorUnknown>Příkaz nebylo možné dokončit. (Chyba %1)</errorUnknown>
+	<errors>
+		<error number="10">Neplatný příkaz.</error>
+		<error number="11">Typ zdroje nebyl v požadavku určen.</error>
+		<error number="12">Požadovaný typ zdroje není platný.</error>
+		<error number="102">Špatné název souboru, nebo složky.</error>
+		<error number="103">Nebylo možné příkaz dokončit kvůli omezení oprávnění.</error>
+		<error number="104">Nebylo možné příkaz dokončit kvůli omezení oprávnění souborového systému.</error>
+		<error number="105">Neplatná přípona souboru.</error>
+		<error number="109">Neplatný požadavek.</error>
+		<error number="110">Neznámá chyba.</error>
+		<error number="111">It was not possible to complete the request due to resulting file size.</error>
+		<error number="115">Soubor nebo složka se stejným názvem již existuje.</error>
+		<error number="116">Složka nenalezena, prosím obnovte a zkuste znovu.</error>
+		<error number="117">Soubor nenalezen, prosím obnovte seznam souborů a zkuste znovu.</error>
+		<error number="118">Cesty zdroje a cíle jsou stejné.</error>
+		<error number="201">Soubor se stejným názvem je již dostupný, nahraný soubor byl přejmenován na "%1".</error>
+		<error number="202">Neplatný soubor.</error>
+		<error number="203">Neplatný soubor. Velikost souboru je příliš velká.</error>
+		<error number="204">Nahraný soubor je poškozen.</error>
+		<error number="205">Na serveru není dostupná dočasná složka pro nahrávání.</error>
+		<error number="206">Nahrávání zrušeno z bezpečnostních důvodů. Soubor obsahuje data podobná HTML.</error>
+		<error number="207">Nahraný soubor byl přejmenován na "%1".</error>
+		<error number="300">Přesunování souboru(ů) selhalo.</error>
+		<error number="301">Kopírování souboru(ů) selhalo.</error>
+		<error number="500">Průzkumník souborů je z bezpečnostních důvodů zakázán. Zdělte to prosím správci systému a zkontrolujte soubor nastavení CKFinder.</error>
+		<error number="501">Podpora náhledů je zakázána.</error>
+	</errors>
+</messages>

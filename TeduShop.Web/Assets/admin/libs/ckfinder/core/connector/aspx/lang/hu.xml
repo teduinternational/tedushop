@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckfinder.com/license
+
+ Defines the object for the Hungarian language.
+-->
+<messages>
+	<errorUnknown>A parancsot nem sikerült végrehajtani. (Hiba: %1)</errorUnknown>
+	<errors>
+		<error number="10">Érvénytelen parancs.</error>
+		<error number="11">A fájl típusa nem lett a kérés során beállítva.</error>
+		<error number="12">A kívánt fájl típus érvénytelen.</error>
+		<error number="102">Érvénytelen fájl vagy könyvtárnév.</error>
+		<error number="103">Hitelesítési problémák miatt nem sikerült a kérést teljesíteni.</error>
+		<error number="104">Jogosultsági problémák miatt nem sikerült a kérést teljesíteni.</error>
+		<error number="105">Érvénytelen fájl kiterjesztés.</error>
+		<error number="109">Érvénytelen kérés.</error>
+		<error number="110">Ismeretlen hiba.</error>
+		<error number="111">A kérés nem teljesíthető a létrejövő fájl mérete miatt.</error>
+		<error number="115">A fálj vagy mappa már létezik ezen a néven.</error>
+		<error number="116">Mappa nem található. Kérem frissítsen és próbálja újra.</error>
+		<error number="117">Fájl nem található. Kérem frissítsen és próbálja újra.</error>
+		<error number="118">A forrás és a cél azonos.</error>
+		<error number="201">Ilyen nevű fájl már létezett. A feltöltött fájl a következőre lett átnevezve: "%1".</error>
+		<error number="202">Érvénytelen fájl.</error>
+		<error number="203">Érvénytelen fájl. A fájl mérete túl nagy.</error>
+		<error number="204">A feltöltött fájl hibás.</error>
+		<error number="205">A szerveren nem található a feltöltéshez ideiglenes mappa.</error>
+		<error number="206">A fájl feltötése biztonsági okból megszakadt. A fájl HTML adatokat tartalmaz.</error>
+		<error number="207">El fichero subido ha sido renombrado como "%1".</error>
+		<error number="300">A fájl(ok) áthelyezése sikertelen.</error>
+		<error number="301">A fájl(ok) másolása sikertelen.</error>
+		<error number="500">A fájl-tallózó biztonsági okok miatt nincs engedélyezve. Kérem vegye fel a kapcsolatot a rendszer üzemeltetőjével és ellenőrizze a CKFinder konfigurációs fájlt.</error>
+		<error number="501">A bélyegkép támogatás nincs engedélyezve.</error>
+	</errors>
+</messages>
