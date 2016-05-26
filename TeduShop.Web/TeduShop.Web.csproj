@@ -3907,6 +3907,67 @@
     <Content Include="Assets\admin\libs\toastr\toastr.js" />
     <Content Include="Assets\admin\libs\toastr\toastr.min.css" />
     <Content Include="Assets\admin\libs\toastr\toastr.min.js" />
+    <Content Include="Assets\client\css\bootstrap.css" />
+    <Content Include="Assets\client\css\etalage.css" />
+    <Content Include="Assets\client\css\form.css" />
+    <Content Include="Assets\client\css\style.css" />
+    <Content Include="Assets\client\images\a-star.png" />
+    <Content Include="Assets\client\images\arrow1.png" />
+    <Content Include="Assets\client\images\arrow2.png" />
+    <Content Include="Assets\client\images\avatar.png" />
+    <Content Include="Assets\client\images\b-arrow.png" />
+    <Content Include="Assets\client\images\ba.jpg" />
+    <Content Include="Assets\client\images\baa.jpg" />
+    <Content Include="Assets\client\images\bag.jpg" />
+    <Content Include="Assets\client\images\bag1.jpg" />
+    <Content Include="Assets\client\images\bo.jpg" />
+    <Content Include="Assets\client\images\bott.jpg" />
+    <Content Include="Assets\client\images\bottle.jpg" />
+    <Content Include="Assets\client\images\ch.jpg" />
+    <Content Include="Assets\client\images\facebook.png" />
+    <Content Include="Assets\client\images\gpluse.png" />
+    <Content Include="Assets\client\images\img-sprite.png" />
+    <Content Include="Assets\client\images\label_new.png" />
+    <Content Include="Assets\client\images\logo.png" />
+    <Content Include="Assets\client\images\pi.jpg" />
+    <Content Include="Assets\client\images\pi1.jpg" />
+    <Content Include="Assets\client\images\pi2.jpg" />
+    <Content Include="Assets\client\images\pi3.jpg" />
+    <Content Include="Assets\client\images\pi4.jpg" />
+    <Content Include="Assets\client\images\pic.jpg" />
+    <Content Include="Assets\client\images\pic1.jpg" />
+    <Content Include="Assets\client\images\pic10.jpg" />
+    <Content Include="Assets\client\images\pic11.jpg" />
+    <Content Include="Assets\client\images\pic12.jpg" />
+    <Content Include="Assets\client\images\pic13.jpg" />
+    <Content Include="Assets\client\images\pic2.jpg" />
+    <Content Include="Assets\client\images\pic3.jpg" />
+    <Content Include="Assets\client\images\pic4.jpg" />
+    <Content Include="Assets\client\images\pic5.jpg" />
+    <Content Include="Assets\client\images\pic6.jpg" />
+    <Content Include="Assets\client\images\pic7.jpg" />
+    <Content Include="Assets\client\images\pic8.jpg" />
+    <Content Include="Assets\client\images\review.png" />
+    <Content Include="Assets\client\images\rss.png" />
+    <Content Include="Assets\client\images\s1.jpg" />
+    <Content Include="Assets\client\images\s2.jpg" />
+    <Content Include="Assets\client\images\s3.jpg" />
+    <Content Include="Assets\client\images\s4.jpg" />
+    <Content Include="Assets\client\images\sh.jpg" />
+    <Content Include="Assets\client\images\si1.jpg" />
+    <Content Include="Assets\client\images\si2.jpg" />
+    <Content Include="Assets\client\images\si3.jpg" />
+    <Content Include="Assets\client\images\si4.jpg" />
+    <Content Include="Assets\client\images\star.png" />
+    <Content Include="Assets\client\images\tick1.png" />
+    <Content Include="Assets\client\images\twitter.png" />
+    <Content Include="Assets\client\images\wa.jpg" />
+    <Content Include="Assets\client\images\wat.jpg" />
+    <Content Include="Assets\client\images\zoom.png" />
+    <Content Include="Assets\client\js\jquery.etalage.min.js" />
+    <Content Include="Assets\client\js\jquery.flexisel.js" />
+    <Content Include="Assets\client\js\jquery.min.js" />
+    <Content Include="Assets\client\js\jquery.wmuSlider.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Libs\CKFinder.dll" />
@@ -3927,7 +3988,6 @@
     <Folder Include="app\shared\footer\" />
     <Folder Include="app\shared\navigation\" />
     <Folder Include="Assets\admin\js\pages\" />
-    <Folder Include="Assets\client\" />
     <Folder Include="UploadedFiles\" />
   </ItemGroup>
   <ItemGroup>
@@ -4194,6 +4254,33 @@
     <Content Include="Assets\admin\libs\angular-local-storage\LICENSE" />
     <Content Include="Assets\admin\libs\angular-local-storage\package.json" />
     <Content Include="Assets\admin\libs\angular-local-storage\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConnectionStrings.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppSettings.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Layouts.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\bigshope-web.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\client\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Footer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Header.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Category.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
