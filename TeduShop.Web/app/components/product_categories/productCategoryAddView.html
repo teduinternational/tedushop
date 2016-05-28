@@ -24,7 +24,7 @@
         <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label">Tên danh mục</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" ng-maxlength="256" required name="name" ng-model="productCategory.Name">
+            <input type="text" class="form-control" ng-maxlength="256" required name="name" ng-change="GetSeoTitle()" ng-model="productCategory.Name">
             <span ng-show="frmAddProductCategory.name.$invalid" class="has-error">Phải nhập tên danh mục</span>
             <span ng-show="frmAddProductCategory.name.$error.maxlength" class="has-error">Tên danh mục chỉ được 256 ký tự</span>
 
