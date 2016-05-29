@@ -3918,6 +3918,10 @@
     <Content Include="Assets\client\css\etalage.css" />
     <Content Include="Assets\client\css\form.css" />
     <Content Include="Assets\client\css\style.css" />
+    <Content Include="Assets\client\font-awesome-4.6.3\css\font-awesome.css" />
+    <Content Include="Assets\client\font-awesome-4.6.3\css\font-awesome.min.css" />
+    <Content Include="Assets\client\font-awesome-4.6.3\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\client\font-awesome-4.6.3\HELP-US-OUT.txt" />
     <Content Include="Assets\client\images\a-star.png" />
     <Content Include="Assets\client\images\arrow1.png" />
     <Content Include="Assets\client\images\arrow2.png" />
@@ -3999,7 +4003,6 @@
     <Folder Include="Views\About\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Views\Post\" />
-    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -4292,6 +4295,44 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\Category.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Product\Category.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\client\font-awesome-4.6.3\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\client\font-awesome-4.6.3\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\client\font-awesome-4.6.3\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\client\font-awesome-4.6.3\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\client\font-awesome-4.6.3\fonts\FontAwesome.otf" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\animated.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\bordered-pulled.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\core.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\fixed-width.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\font-awesome.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\icons.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\larger.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\list.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\mixins.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\path.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\rotated-flipped.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\screen-reader.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\stacked.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\less\variables.less" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\font-awesome.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_animated.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_bordered-pulled.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_core.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_fixed-width.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_icons.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_larger.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_list.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_mixins.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_path.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_rotated-flipped.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_screen-reader.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_stacked.scss" />
+    <Content Include="Assets\client\font-awesome-4.6.3\scss\_variables.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
