@@ -1,0 +1,104 @@
+﻿@model TeduShop.Web.Infrastructure.Core.PaginationSet<TeduShop.Web.Models.ProductViewModel>
+
+@{
+    var keyword = (string)ViewBag.Keyword;
+    ViewBag.Title = "Kết quả tìm kiếm cho từ khóa " + keyword;
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+<div class="women-product">
+  @if (Model.Count > 0)
+  {
+      <div class="w_content">
+        <div class="women">
+          <a href=""><h4>Kết quả tìm kiếm: @keyword - <span>@Model.TotalCount sản phẩm</span> </h4></a>
+          <ul class="w_nav">
+            <li>Sắp xếp : </li>
+            <li><a class="active" href="?page=@Model.Page&sort=popular">Phổ biến</a></li> |
+            <li><a href="?page=@Model.Page&sort=new">Mới </a></li> |
+            <li><a href="?page=@Model.Page&sort=discount">Khuyến mãi</a></li> |
+            <li><a href="?page=@Model.Page&sort=price">Giá: Thấp -> Cao </a></li>
+            <div class="clearfix"> </div>
+          </ul>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+
+      <div class="grid-product">
+        @foreach (var product in Model.Items)
+        {
+          var url = "/" + product.Alias + ".p-" + product.ID;
+            <div class="product-grid">
+              <div class="content_box">
+                <a href="@url">
+                  <div class="left-grid-view grid-view-left">
+                    <img src="@product.Image" class="img-responsive watch-right" alt="@product.Name" />
+                    <div class="mask">
+                      <div class="info">Xem nhanh</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <h4><a href="@url">@product.Name</a></h4>
+              <p>@product.Description</p>
+              @(product.Price == 0 ? "Liên hệ" : product.Price.ToString("N2"))
+            </div>
+        }
+        <div class="clearfix"> </div>
+        @if (Model.TotalPages > 1)
+        {
+          // Create numeric links
+          var startPageIndex = Math.Max(1, Model.Page - Model.MaxPage / 2);
+          var endPageIndex = Math.Min(Model.TotalPages, Model.Page + Model.MaxPage / 2);
+
+            <nav>
+              <ul class="pagination">
+                @if (Model.Page > 1)
+                {
+                    <li>
+                      <a href="?page=1" aria-label="First">
+                        <i class="fa fa-angle-double-left"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="?page=@(Model.Page-1)" aria-label="Previous">
+                        <i class="fa fa-angle-double-left"></i>
+                      </a>
+                    </li>
+                }
+
+                @for (int i = startPageIndex; i <= endPageIndex; i++)
+                {
+                  if (Model.Page == i)
+                  {
+                        <li class="active"><a href="?page=@i" title="Trang @i">@i</a></li>
+                  }
+                  else
+                  {
+                        <li><a href="?page=@i" title="Trang @i">@i</a></li>
+                  }
+                }
+                @if (Model.Page < Model.TotalPages)
+                {
+                    <li>
+                      <a href="?page=@(Model.Page+1)" aria-label="Next">
+                        <i class="fa fa-angle-double-right"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="?page=@Model.TotalPages" aria-label="Last">
+                        <i class="fa fa-angle-double-right"></i>
+                      </a>
+                    </li>
+                }
+              </ul>
+            </nav>
+        }
+      </div>
+  }
+  else
+  {
+      <div class="text-center">Không có bản ghi nào được tìm thấy.</div>
+  }
+
+
+</div>
