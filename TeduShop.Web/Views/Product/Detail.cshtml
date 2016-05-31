@@ -1,0 +1,119 @@
+﻿@model TeduShop.Web.Models.ProductViewModel
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+<link href="~/Assets/client/css/etalage.css" rel="stylesheet" />
+@section footerJS{
+  <script type="text/javascript" src="/Assets/client/js/jquery.flexisel.js"></script>
+  <script src="/Assets/client/js/jquery.etalage.min.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $("#flexiselDemo1").flexisel({
+        visibleItems: 5,
+        animationSpeed: 1000,
+        autoPlay: true,
+        autoPlaySpeed: 3000,
+        pauseOnHover: true,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: {
+          portrait: {
+            changePoint: 480,
+            visibleItems: 1
+          },
+          landscape: {
+            changePoint: 640,
+            visibleItems: 2
+          },
+          tablet: {
+            changePoint: 768,
+            visibleItems: 3
+          }
+        }
+      });
+
+      $('#etalage').etalage({
+        thumb_image_width: 300,
+        thumb_image_height: 400,
+        source_image_width: 900,
+        source_image_height: 1200,
+        show_hint: true,
+        click_callback: function (image_anchor, instance_id) {
+          alert('Callback example:\nYou clicked on an image with the anchor: "' + image_anchor + '"\n(in Etalage instance: "' + instance_id + '")');
+        }
+      });
+
+    });
+  </script>
+}
+<div class="single_top">
+  <div class="single_grid">
+    <div class="grid images_3_of_2">
+
+      <ul id="etalage">
+        <li>
+          <a href="#">
+            <img class="etalage_thumb_image img-responsive" src="@Model.Image" />
+            <img class="etalage_source_image img-responsive" src="@Model.Image" title="" />
+          </a>
+        </li>
+        @{
+            var moreImages = (List<string>)ViewBag.MoreImages;
+            if (moreImages.Count > 0)
+            {
+              foreach (var image in moreImages)
+              {
+                    <li>
+                      <img class="etalage_thumb_image img-responsive" src="@image" />
+                      <img class="etalage_source_image img-responsive" src="@image" title="" />
+                    </li>
+              }
+            }
+        }
+
+
+      </ul>
+      <div class="clearfix"> </div>
+    </div>
+    <div class="desc1 span_3_of_2">
+
+
+      <h4>@Model.Name</h4>
+      <div class="cart-b">
+        <div class="left-n ">@(Model.Price == 0 ? "Liên hệ" : Model.Price.ToString("N0"))</div>
+        <a class="now-get get-cart-in" href="/them-gio-hang/@Model.ID">Thêm vào giỏ hàng</a>
+        <div class="clearfix"></div>
+      </div>
+      <h6>@Model.Quantity sản phẩm trong kho</h6>
+      <p>@Model.Description</p>
+      <div class="share">
+        <h5>Chia sẻ :</h5>
+        <ul class="share_nav">
+          <li><a href="#"><img src="/Assets/client/images/facebook.png" title="facebook"></a></li>
+          <li><a href="#"><img src="/Assets/client/images/twitter.png" title="Twiiter"></a></li>
+          <li><a href="#"><img src="/Assets/client/images/rss.png" title="Rss"></a></li>
+          <li><a href="#"><img src="/Assets/client/images/gpluse.png" title="Google+"></a></li>
+        </ul>
+      </div>
+
+
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+  @{
+      var relatedProducts = (IEnumerable<TeduShop.Web.Models.ProductViewModel>)ViewBag.RelatedProducts;
+  }
+  <ul id="flexiselDemo1">
+    @foreach (var product in relatedProducts)
+    {
+        <li><img src="@product.Image" /><div class="grid-flex"><a href="/@(product.Alias).p-@(product.ID).html">@product.Name</a><p>@product.Price</p></div></li>
+    }
+  </ul>
+
+
+  <div class="toogle">
+    <h3 class="m_3">Chi tiết sản phẩm</h3>
+    <p class="m_text">@Html.Raw(Model.Content)</p>
+  </div>
+</div>
