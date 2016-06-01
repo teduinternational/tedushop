@@ -1,0 +1,6 @@
+﻿.tag{
+    display:block;
+}
+.taglist li{
+	float:left;
+}
