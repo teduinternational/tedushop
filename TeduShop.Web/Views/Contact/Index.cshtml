@@ -1,0 +1,51 @@
+﻿@model TeduShop.Web.Models.ContactDetailViewModel
+
+@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+@section footerJS{
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk3Eeu6MXm1Y6qil2hO6j89kckY5nnSTo"></script>
+  <script src="~/Assets/client/js/controllers/contact.js"></script>
+}
+<style>
+  #map {
+    height: 100%;
+  }
+</style>
+<input type="hidden" id="hidAddress" value="@Model.Name<br />Điện thoại:@Model.Phone <br>Địa chỉ: @Model.Address" />
+<input type="hidden" id="hidLat" value="@Model.Lat" />
+<input type="hidden" id="hidLng" value="@Model.Lng" />
+<input type="hidden" id="hidName" value="@Model.Name" />
+<div class="main">
+  <div class="reservation_top">
+    <div class="contact_right">
+      <h3>Thông tin liên hệ</h3>
+      <address class="address">
+        <p>@Model.Address</p>
+        <dl>
+          <dt> </dt>
+          <dd>Điện thoại:<span> @Model.Phone</span></dd>
+          <dd>E-mail:&nbsp; <a href="mailto:@(Model.Email)">@(Model.Email)</a></dd>
+        </dl>
+      </address>
+      <div class="clearfix"></div>
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <div class="reservation_top">
+    <div class="contact_right">
+      <h3>Contact Form</h3>
+      <div class="contact-form">
+        <form method="post" action="contact-post.html">
+          <input type="text" class="textbox" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+          <input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+          <textarea value="Message" onfocus="this.value= '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+          <input type="submit" value="Send">
+          <div class="clearfix"> </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
