@@ -63,7 +63,7 @@ ul.support li a {
 }
 .header-bottom-left{
 	float: left;
-	width: 55%;
+	width: 53%;
 }
 .logo{
 	float:left;
@@ -72,7 +72,7 @@ ul.support li a {
 }
 .header-bottom-right{
 	float: right;
-	width: 37%;
+	width: 46%;
 	text-align: center;
 	padding-top:1.7em;
 }

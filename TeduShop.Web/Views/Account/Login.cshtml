@@ -1,0 +1,34 @@
+﻿@model TeduShop.Web.Models.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+<div class="account_grid">
+  <div class="login-right">
+    <h3>Đăng nhập</h3>
+    @using (Html.BeginForm("Login", "Account", new { returnUrl = @ViewBag.ReturnUrl }, FormMethod.Post))
+    {
+        @Html.ValidationSummary(false, "", new { @class = "error" })
+            <div>
+              <span>Tài khoản<label>*</label></span>
+              @Html.TextBoxFor(model => model.UserName)
+            </div>
+            <div>
+              <span>Password<label>*</label></span>
+              @Html.PasswordFor(model => model.Password)
+            </div>
+            <div>
+              @Html.CheckBoxFor(model => model.RememberMe)
+              Nhớ mật khẩu?
+            </div>
+            <a class="forgot" href="#">Forgot Your Password?</a>
+            <input type="submit" value="Login">
+    }
+  </div>
+  <div class="login-left">
+    <h3>Chưa có tài khoản</h3>
+    <p>Nếu bạn chưa có tài khoản vui lòng đăng ký tại link dưới đây:</p>
+    <a class="acount-btn" href="/dang-ky.html">Đăng ký thành viên</a>
+  </div>
+  <div class="clearfix"> </div>
+</div>
