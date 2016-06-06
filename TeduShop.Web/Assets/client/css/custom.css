@@ -7,3 +7,26 @@
 .error{
     color:red;
 }
+
+.register-top-grid input[type="password"], .register-bottom-grid input[type="password"] {
+    border: 1px solid #EEE;
+    outline-color: #FF5B36;
+    width: 85%;
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+.register-but  input[type="submit"] {
+    background: #F97E76;
+    color: #FFF;
+    font-size: 1em;
+    padding: 0.8em 2em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: inline-block;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
