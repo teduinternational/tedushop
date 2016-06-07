@@ -82,7 +82,7 @@
       <h4>@Model.Name</h4>
       <div class="cart-b">
         <div class="left-n ">@(Model.Price == 0 ? "Liên hệ" : Model.Price.ToString("N0"))</div>
-        <a class="now-get get-cart-in" href="/them-gio-hang/@Model.ID">Thêm vào giỏ hàng</a>
+        <a class="now-get get-cart-in" href="#" data-id="@Model.ID" id="btnAddToCart">Thêm vào giỏ hàng</a>
         <div class="clearfix"></div>
       </div>
       <h6>@Model.Quantity sản phẩm trong kho</h6>
