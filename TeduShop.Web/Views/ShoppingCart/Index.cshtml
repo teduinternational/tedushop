@@ -3,8 +3,12 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/Layouts.cshtml";
 }
+@section footerJS{
+<script src="~/Assets/client/js/controllers/shoppingCart.js"></script>
+  }
 <div class="single_top">
   <div class="single_grid">
+    <div id="cartContent">
       <table class="table">
         <thead>
           <tr>
@@ -17,16 +21,44 @@
             <td>#</td>
           </tr>
         </thead>
-        <tbody id="cartBody">
-         
-        </tbody>
+        <tbody id="cartBody"></tbody>
       </table>
+      <button class="btn btn-success" id="btnContinue">Tiếp tục mua hàng</button>
+      <button class="btn btn-danger" id="btnDeleteAll">Xóa giỏ hàng</button>
+      <button class="btn btn" id="btnCheckout">Thanh toán</button>
       <div class="pull-right">
         Tổng tiền: <span id="lblTotalOrder"></span>
       </div>
+    </div>
+    <div id="divCheckout" style="display:none;">
+      <div class="reservation_top">
+        <div class="contact_right">
+          <h3>Thanh toán</h3>
+          <div class="contact-form">
+            <form method="post" id="frmPayment">
+              @if (Request.IsAuthenticated)
+              {
+                  <label>
+                    <input type="checkbox" id="chkUserLoginInfo" />
+                    Sử dụng thông tin đăng nhập
+                  </label>
+              }
+              <input type="text" class="textbox" id="txtName" name="name" placeholder="Họ tên">
+              <input type="text" class="textbox" id="txtAddress" name="address" placeholder="Địa chỉ">
+              <input type="text" class="textbox" id="txtEmail" name="email" placeholder="Email">
+              <input type="text" class="textbox" id="txtPhone" name="phone" placeholder="Điện thoại">
+              <textarea value="" id="txtMessage">Message</textarea>
+              <input type="button" id="btnCreateOrder" value="Thanh toán">
+              <div class="clearfix"> </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="clearfix"> </div>
   </div>
-  
+
 </div>
 
 <script id="tplCart" type="x-tmpl-mustache">

@@ -44,6 +44,7 @@
     <Compile Include="ContactDetailService.cs" />
     <Compile Include="ErrorService.cs" />
     <Compile Include="FeedbackService.cs" />
+    <Compile Include="OrderService.cs" />
     <Compile Include="PageService.cs" />
     <Compile Include="PostCategoryService.cs" />
     <Compile Include="PostService.cs" />
