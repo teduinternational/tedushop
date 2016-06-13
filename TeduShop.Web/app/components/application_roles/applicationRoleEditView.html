@@ -1,0 +1,49 @@
+﻿<section class="content-header">
+  <h1>
+    Cập nhật quyền
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="/admin"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+    <li><a ui-sref="app_roles">Danh mục quyền</a></li>
+    <li class="active"><a href="#">Thêm mới</a></li>
+  </ol>
+</section>
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-info">
+        <div class="box-header with-border">
+          <h3 class="box-title">{{role.Name}}</h3>
+        </div><!-- /.box-header -->
+        <!-- form start -->
+        <form class="form-horizontal" role="form" novalidate name="frmUpdateAppRole" ng-submit="updateApplicationRole()">
+          <div class="box-body">
+            <div class="col-md-8">
+              <div class="form-group" ng-class="{ 'has-error' : frmUpdateAppRole.name.$invalid && !frmUpdateAppRole.name.$pristine }">
+                <label class="col-sm-2 control-label">Tên quyền</label>
+                <div class="col-sm-10">
+                  <input type="text" name="name" class="form-control"
+                         required reqired-message="Tên quyền bắt buộc." ng-model="role.Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Mô tả</label>
+                <div class="col-sm-10">
+                  <textarea type="text" class="form-control" ng-model="role.Description"></textarea>
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <a ui-sref="app_roles" class="btn btn-default">Hủy bỏ</a>
+                  <input type="submit" ng-disabled="frmUpdateAppRole.$invalid" class="btn btn-primary" value="Lưu lại" />
+                </div>
+              </div>
+            </div>
+          </div><!-- /.box-body -->
+        </form>
+      </div><!-- /.box -->
+    </div>
+  </div>
+</section>

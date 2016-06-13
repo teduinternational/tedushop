@@ -3,7 +3,10 @@
 (function () {
     angular.module('tedushop',
         ['tedushop.products',
+         'tedushop.application_groups',
          'tedushop.product_categories',
+         'tedushop.application_roles',
+         'tedushop.application_users',
          'tedushop.common'])
         .config(config)
         .config(configAuthentication);
