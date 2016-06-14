@@ -1,27 +1,32 @@
 ﻿@model TeduShop.Web.Infrastructure.Core.PaginationSet<TeduShop.Web.Models.ProductViewModel>
 
 @{
-    ViewBag.Title = "Category";
-    Layout = "~/Views/Shared/Layouts.cshtml";
     var category = (TeduShop.Web.Models.ProductCategoryViewModel)ViewBag.Category;
+    var pageIndex = Model.Page;
+    ViewBag.Title = pageIndex == 1 ? category.Name : category.Name + " - Trang " + pageIndex;
+    ViewBag.MetaKeyword = pageIndex == 1 ? category.MetaKeyword : category.MetaKeyword + " - Trang " + pageIndex;
+    ViewBag.MetaDescription = pageIndex == 1 ? category.MetaDescription : category.MetaDescription + " - Trang " + pageIndex;
+    Layout = "~/Views/Shared/Layouts.cshtml";
+
 }
 <div class="women-product">
+  <div class="w_content">
+    <div class="women">
+      <a href="/@(category.Alias).pc-@(category.ID).html"><h4>@category.Name - <span>@Model.TotalCount sản phẩm</span> </h4></a>
+      <ul class="w_nav">
+        <li>Sắp xếp : </li>
+        <li><a class="active" href="?page=@Model.Page&sort=popular">Phổ biến</a></li> |
+        <li><a href="?page=@Model.Page&sort=new">Mới </a></li> |
+        <li><a href="?page=@Model.Page&sort=discount">Khuyến mãi</a></li> |
+        <li><a href="?page=@Model.Page&sort=price">Giá: Thấp -> Cao </a></li>
+        <div class="clearfix"> </div>
+      </ul>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+
   @if (Model.Count > 0)
   {
-      <div class="w_content">
-        <div class="women">
-          <a href="/@(category.Alias).pc-@(category.ID).html"><h4>@category.Name - <span>@Model.TotalCount sản phẩm</span> </h4></a>
-          <ul class="w_nav">
-            <li>Sắp xếp : </li>
-            <li><a class="active" href="?page=@Model.Page&sort=popular">Phổ biến</a></li> |
-            <li><a href="?page=@Model.Page&sort=new">Mới </a></li> |
-            <li><a href="?page=@Model.Page&sort=discount">Khuyến mãi</a></li> |
-            <li><a href="?page=@Model.Page&sort=price">Giá: Thấp -> Cao </a></li>
-            <div class="clearfix"> </div>
-          </ul>
-          <div class="clearfix"> </div>
-        </div>
-      </div>
 
       <div class="grid-product">
         @foreach (var product in Model.Items)
@@ -54,41 +59,41 @@
               <ul class="pagination">
                 @if (Model.Page > 1)
                 {
-                    <li>
-                      <a href="?page=1" aria-label="First">
-                        <i class="fa fa-angle-double-left"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="?page=@(Model.Page-1)" aria-label="Previous">
-                        <i class="fa fa-angle-double-left"></i>
-                      </a>
-                    </li>
+                <li>
+                  <a href="?page=1" aria-label="First">
+                    <i class="fa fa-angle-double-left"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="?page=@(Model.Page-1)" aria-label="Previous">
+                    <i class="fa fa-angle-double-left"></i>
+                  </a>
+                </li>
                 }
 
                 @for (int i = startPageIndex; i <= endPageIndex; i++)
                 {
                   if (Model.Page == i)
                   {
-                        <li class="active"><a href="?page=@i"  title="Trang @i">@i</a></li>
+                <li class="active"><a href="?page=@i" title="Trang @i">@i</a></li>
                   }
                   else
                   {
-                        <li><a href="?page=@i" title="Trang @i">@i</a></li>
+                <li><a href="?page=@i" title="Trang @i">@i</a></li>
                   }
                 }
                 @if (Model.Page < Model.TotalPages)
                 {
-                    <li>
-                      <a href="?page=@(Model.Page+1)" aria-label="Next">
-                        <i class="fa fa-angle-double-right"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="?page=@Model.TotalPages" aria-label="Last">
-                        <i class="fa fa-angle-double-right"></i>
-                      </a>
-                    </li>
+                <li>
+                  <a href="?page=@(Model.Page+1)" aria-label="Next">
+                    <i class="fa fa-angle-double-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="?page=@Model.TotalPages" aria-label="Last">
+                    <i class="fa fa-angle-double-right"></i>
+                  </a>
+                </li>
                 }
               </ul>
             </nav>

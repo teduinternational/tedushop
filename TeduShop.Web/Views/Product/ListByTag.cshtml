@@ -1,8 +1,12 @@
 ﻿@model TeduShop.Web.Infrastructure.Core.PaginationSet<TeduShop.Web.Models.ProductViewModel>
 
 @{
+
     var tag = (TeduShop.Web.Models.TagViewModel)ViewBag.Tag;
-    ViewBag.Title = "Kết quả tìm kiếm cho tag " + tag.Name;
+    var pageIndex = Model.Page;
+    ViewBag.Title = pageIndex == 1 ? "Kết quả tìm kiếm cho tag " + tag.Name : "Kết quả tìm kiếm cho tag " + tag.Name + " - Trang " + pageIndex;
+    ViewBag.MetaKeyword = pageIndex == 1 ? "Kết quả tìm kiếm cho tag " + tag.Name : "Kết quả tìm kiếm cho tag " + tag.Name + " - Trang " + pageIndex;
+    ViewBag.MetaDescription = pageIndex == 1 ? "Kết quả tìm kiếm cho tag " + tag.Name : "Kết quả tìm kiếm cho tag " + tag.Name + " - Trang " + pageIndex;
     Layout = "~/Views/Shared/Layouts.cshtml";
 }
 <div class="women-product">
@@ -11,7 +15,7 @@
       <div class="w_content">
         <div class="women">
           <a href=""><h4>Tag: @tag.Name - <span>@Model.TotalCount sản phẩm</span> </h4></a>
-          
+
           <div class="clearfix"> </div>
         </div>
       </div>
