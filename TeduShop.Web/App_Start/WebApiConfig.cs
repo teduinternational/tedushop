@@ -1,4 +1,5 @@
 ﻿using Microsoft.Owin.Security.OAuth;
+using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +16,11 @@ namespace TeduShop.Web
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver =
+            new DefaultContractResolver { IgnoreSerializableAttribute = true };
 
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
-
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

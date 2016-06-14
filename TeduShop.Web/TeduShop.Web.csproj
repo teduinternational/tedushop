@@ -212,6 +212,7 @@
     <Compile Include="Api\PostCategoryController.cs" />
     <Compile Include="Api\ProductCategoryController.cs" />
     <Compile Include="Api\ProductController.cs" />
+    <Compile Include="Api\StatisticController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -300,6 +301,9 @@
     <Content Include="app\components\product_categories\productCategoryEditView.html" />
     <Content Include="app\components\product_categories\productCategoryListController.js" />
     <Content Include="app\components\product_categories\productCategoryListView.html" />
+    <Content Include="app\components\statistic\revenueStatisticController.js" />
+    <Content Include="app\components\statistic\revenueStatisticView.html" />
+    <Content Include="app\components\statistic\statistic.module.js" />
     <Content Include="app\shared\directives\asDateDirective.js" />
     <Content Include="app\shared\directives\pagerDirective.html" />
     <Content Include="app\shared\directives\pagerDirective.js" />
@@ -372,6 +376,12 @@
     <Content Include="Assets\admin\js\app.js" />
     <Content Include="Assets\admin\js\app.min.js" />
     <Content Include="Assets\admin\js\demo.js" />
+    <Content Include="Assets\admin\libs\angular-chart.js\angular-chart.js" />
+    <Content Include="Assets\admin\libs\angular-chart.js\dist\angular-chart.css" />
+    <Content Include="Assets\admin\libs\angular-chart.js\dist\angular-chart.js" />
+    <Content Include="Assets\admin\libs\angular-chart.js\dist\angular-chart.min.css" />
+    <Content Include="Assets\admin\libs\angular-chart.js\dist\angular-chart.min.js" />
+    <Content Include="Assets\admin\libs\angular-chart.js\gulpfile.js" />
     <Content Include="Assets\admin\libs\angular-loading-bar\build\loading-bar.css" />
     <Content Include="Assets\admin\libs\angular-loading-bar\build\loading-bar.js" />
     <Content Include="Assets\admin\libs\angular-loading-bar\build\loading-bar.min.css" />
@@ -434,6 +444,7 @@
     <Content Include="Assets\admin\libs\bootstrap\js\tooltip.js" />
     <Content Include="Assets\admin\libs\bootstrap\js\transition.js" />
     <Content Include="Assets\admin\libs\bootstrap\package.js" />
+    <Content Include="Assets\admin\libs\Chart.js\Chart.js" />
     <Content Include="Assets\admin\libs\checklist-model\checklist-model.js" />
     <Content Include="Assets\admin\libs\checklist-model\LICENSE.txt" />
     <Content Include="Assets\admin\libs\ckeditor\adapters\jquery.js" />
@@ -5390,6 +5401,25 @@
     <Content Include="Assets\admin\libs\checklist-model\.bower.json" />
     <Content Include="Assets\admin\libs\checklist-model\bower.json" />
     <Content Include="Assets\admin\libs\checklist-model\readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\admin\libs\angular-chart.js\.bower.json" />
+    <Content Include="Assets\admin\libs\angular-chart.js\angular-chart.less" />
+    <Content Include="Assets\admin\libs\angular-chart.js\bower.json" />
+    <Content Include="Assets\admin\libs\angular-chart.js\CONTRIBUTING.md" />
+    <Content Include="Assets\admin\libs\angular-chart.js\dist\angular-chart.js.tar.gz" />
+    <Content Include="Assets\admin\libs\angular-chart.js\dist\angular-chart.min.css.map" />
+    <Content Include="Assets\admin\libs\angular-chart.js\dist\angular-chart.min.js.map" />
+    <Content Include="Assets\admin\libs\angular-chart.js\Dockerfile" />
+    <Content Include="Assets\admin\libs\angular-chart.js\ISSUE_TEMPLATE.md" />
+    <Content Include="Assets\admin\libs\angular-chart.js\LICENSE" />
+    <Content Include="Assets\admin\libs\angular-chart.js\package.json" />
+    <Content Include="Assets\admin\libs\angular-chart.js\PULL_REQUEST_TEMPLATE.md" />
+    <Content Include="Assets\admin\libs\angular-chart.js\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\admin\libs\Chart.js\.bower.json" />
+    <Content Include="Assets\admin\libs\Chart.js\bower.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
