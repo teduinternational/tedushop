@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Optimization;
+using TeduShop.Common;
 
 namespace TeduShop.Web
 {
@@ -25,7 +26,7 @@ namespace TeduShop.Web
                 .Include("~/Assets/client/css/style.css", new CssRewriteUrlTransform())
                 .Include("~/Assets/client/css/custom.css", new CssRewriteUrlTransform())
                 );
-            BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = bool.Parse(ConfigHelper.GetByKey("EnableBundles"));
         }
     }
 }

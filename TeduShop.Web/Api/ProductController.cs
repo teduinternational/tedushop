@@ -33,7 +33,7 @@ namespace TeduShop.Web.Api
         [HttpGet]
         public HttpResponseMessage GetAll(HttpRequestMessage request)
         {
-            return CreateHttpResponse(request, () =>
+            Func<HttpResponseMessage> func = () =>
             {
                 var model = _productService.GetAll();
 
@@ -41,7 +41,8 @@ namespace TeduShop.Web.Api
 
                 var response = request.CreateResponse(HttpStatusCode.OK, responseData);
                 return response;
-            });
+            };
+            return CreateHttpResponse(request, func);
         }
         [Route("getbyid/{id:int}")]
         [HttpGet]

@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "ConfirmOrder";
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+<div class="single_top">
+  <div class="single_grid">
+    <h1>Kết quả giao dịch</h1>
+    @{
+        var success = (bool)ViewBag.IsSuccess;
+    }
+    @if (success)
+    {
+        <div class="alert alert-success">@ViewBag.Result Vui lòng <a href="/">click vào đây</a> để về trang chủ.</div>
+    }
+    else
+    {
+        <div class="alert alert-danger">@ViewBag.Result. Vui lòng <a href="/">click vào đây</a> để về trang chủ.</div>
+    }
+
+    <div class="clearfix"> </div>
+  </div>
+</div>
