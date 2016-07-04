@@ -1,0 +1,38 @@
+﻿
+@model TeduShop.Web.Models.ExternalLoginConfirmationViewModel
+@{
+    ViewBag.Title = "ExternalLoginConfirmation";
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+
+<div class="account_grid">
+  <div class="login-right">
+    <h3>Liên kết với tài khoản @ViewBag.LoginProvider của bạn.</h3>
+
+    @using (Html.BeginForm("ExternalLoginConfirmation", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <h4>Form nhập thông tin</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <p class="text-info">
+          Bạn vừa chứng thực thành công với <strong>@ViewBag.LoginProvider</strong>.
+          Xin hãy nhập tên tài khoản mà bạn muốn đăng ký trên TEDU dưới đây để kết thúc quá trình login. Những lần sau bạn sẽ không phải thực hiện bước này.
+
+        </p>
+        <div class="form-group">
+          @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+          <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Đăng ký" />
+          </div>
+        </div>
+    }
+  </div>
+</div>
