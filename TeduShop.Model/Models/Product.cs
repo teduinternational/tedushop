@@ -8,6 +8,7 @@ using TeduShop.Model.Abstract;
 namespace TeduShop.Model.Models
 {
     [Table("Products")]
+    
     public class Product : Auditable
     {
         [Key]
