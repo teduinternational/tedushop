@@ -6,6 +6,8 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using TeduShop.Service;
+using TeduShop.Web.Infrastructure.Core;
 using TeduShop.Web.Mappings;
 
 namespace TeduShop.Web
@@ -20,6 +22,9 @@ namespace TeduShop.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //get an instance of servie
+           // IFeedbackService service = ServiceFactory.Get<IFeedbackService>();
         }
     }
 }

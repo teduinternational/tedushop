@@ -50,7 +50,7 @@
         <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label">Danh mục cha</label>
           <div class="col-sm-10">
-           <select name="parentId" class="form-control" ng-model="productCategory.ParentID" ng-options="option.ID as option.Name for option in parentCategories">
+           <select name="parentId" class="form-control" ng-model="productCategory.ParentID" ng-options="option.ID as option.Name for option in flatFolders">
              <option value="">Danh mục gốc</option>
            </select>
             <input type="hidden" name="parentId" ng-model="productCategory.ParentID" />
