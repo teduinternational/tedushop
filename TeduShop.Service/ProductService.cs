@@ -28,6 +28,8 @@ namespace TeduShop.Service
 
         IEnumerable<Product> Search(string keyword, int page, int pageSize, string sort, out int totalRow);
 
+        IEnumerable<Product> GetListProduct(string keyword);
+
         IEnumerable<Product> GetReatedProducts(int id, int top);
 
         IEnumerable<string> GetListProductByName(string name);
@@ -42,7 +44,7 @@ namespace TeduShop.Service
 
         void IncreaseView(int id);
 
-        IEnumerable<Product> GetListProductByTag(string tagId,int page,int pagesize,out int totalRow);
+        IEnumerable<Product> GetListProductByTag(string tagId, int page, int pagesize, out int totalRow);
 
         bool SellProduct(int productId, int quantity);
     }
@@ -235,13 +237,13 @@ namespace TeduShop.Service
 
         public IEnumerable<Product> GetListProductByTag(string tagId, int page, int pageSize, out int totalRow)
         {
-           var model = _productRepository.GetListProductByTag(tagId, page, pageSize, out totalRow);
+            var model = _productRepository.GetListProductByTag(tagId, page, pageSize, out totalRow);
             return model;
         }
 
         public Tag GetTag(string tagId)
         {
-           return _tagRepository.GetSingleByCondition(x=>x.ID==tagId);
+            return _tagRepository.GetSingleByCondition(x => x.ID == tagId);
         }
 
         //Selling product
@@ -252,6 +254,16 @@ namespace TeduShop.Service
                 return false;
             product.Quantity -= quantity;
             return true;
+        }
+
+        public IEnumerable<Product> GetListProduct(string keyword)
+        {
+            IEnumerable<Product> query;
+            if (!string.IsNullOrEmpty(keyword))
+                query = _productRepository.GetMulti(x => x.Name.Contains(keyword));
+            else
+                query = _productRepository.GetAll();
+            return query;
         }
     }
 }

@@ -1,0 +1,51 @@
+﻿  <!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Nhập sản phẩm từ Excel
+
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a ui-sref="products">Danh sách</a></li>
+        <li class="active"> Nhập sản phẩm từ Excel</li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+    <!-- Horizontal Form -->
+    <div class="box box-info">
+        <div class="box-header with-border">
+            <h3 class="box-title">Thêm mới</h3>
+        </div><!-- /.box-header -->
+        <!-- form start -->
+        <form class="form-horizontal" novalidate name="frmImportProduct" role="form" ng-submit="ImportProduct()">
+            <div class="box-body">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Chọn file Excel</label>
+                    <div class="col-sm-10">
+                        <input type="file" file-upload name="file" required />
+                        <span ng-show="frmAddProduct.file.$invalid" class="has-error">Phải nhập  file</span>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Danh mục</label>
+                    <div class="col-sm-10">
+                        <select name="parentId" class="form-control" ng-model="categoryId" ng-options="option.ID as option.Name for option in flatFolders">
+                            <option value="">Danh mục gốc</option>
+                        </select>
+                        <span ng-show="frmImportProduct.categoryId.$invalid" class="has-error">Phải chọn danh mục</span>
+
+                        <input type="hidden" name="categoryId" ng-model="categoryId" />
+                    </div>
+                </div>
+                
+            </div><!-- /.box-body -->
+            <div class="box-footer">
+                <button ui-sref="products" class="btn btn-default">Hủy</button>
+                <button type="submit" ng-disabled="frmImportProduct.$invalid" class="btn btn-success pull-right">Lưu</button>
+            </div><!-- /.box-footer -->
+        </form>
+    </div><!-- /.box -->
+</section><!-- /.content -->
