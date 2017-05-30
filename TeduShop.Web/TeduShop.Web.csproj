@@ -412,7 +412,9 @@
     <Content Include="Assets\admin\img\user7-128x128.jpg" />
     <Content Include="Assets\admin\img\user8-128x128.jpg" />
     <Content Include="Assets\admin\js\app.js" />
-    <Content Include="Assets\admin\js\app.min.js" />
+    <Content Include="Assets\admin\js\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
     <Content Include="Assets\admin\js\demo.js" />
     <Content Include="Assets\admin\libs\angular-chart.js\angular-chart.js" />
     <Content Include="Assets\admin\libs\angular-chart.js\dist\angular-chart.css" />
@@ -5052,6 +5054,7 @@
     <Content Include="Assets\admin\libs\angular-ui-select\package.json" />
     <Content Include="Assets\admin\libs\angular-ui-select\README.md" />
     <Content Include="Assets\admin\templates\ProductImportTemplate.xlsx" />
+    <None Include="bundleconfig.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
